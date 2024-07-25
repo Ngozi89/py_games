@@ -439,6 +439,6 @@ while running:
         print("It's a tie!")
 
     if not input("play again? (y/n): ").lower()== "y":
-        break
+        running = False
 
 print("Hi", str(name) + " thanks for playing!")
