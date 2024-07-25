@@ -31,6 +31,14 @@ else:
 print()   
 # Let player enter name
 name = input("Enter your name ").capitalize()
+# The strip() method ensures that something has to be entered and
+# the isalpha() method ensures that only letters can be entered
+while not name.strip() or not name.isalpha():
+    name = input("The input field must not be left blank.\n"
+                      "The user name must not contain any spaces, "
+                      "only letters are permitted!\n"
+                      "Please enter your Name:\n")
+print()
 "Name: "
 print("Hi,", str(name) + "!")
 #End player name
