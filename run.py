@@ -35,6 +35,9 @@ name = input("Enter your name ").capitalize()
 print("Hi,", str(name) + "!")
 #End player name
 
+# Player score
+score = 0
+
 # Add player and computer choice
 options = ("fire", "wave", "fish", "boat", "grass")
 
@@ -232,6 +235,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "fire" and computerchoice == 4:
         print("You lose!")
@@ -253,6 +257,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇
     ''')
+        score += 1
 
     #Wave
     elif playerchoice == "wave" and computerchoice == 1:
@@ -278,6 +283,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "wave" and computerchoice == 4:
         print("Yeah! you win")
@@ -296,6 +302,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "wave" and computerchoice == 5:
         print("You lose!")
@@ -321,6 +328,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "fish" and computerchoice == 3:
         print("You lose!")
@@ -342,6 +350,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "fish" and computerchoice == 5:
         print("You lose")
@@ -367,6 +376,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "boat" and computerchoice == 3:
         print("Yeah! you win")
@@ -385,6 +395,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "boat" and computerchoice == 4:
         print("You lose!")
@@ -410,6 +421,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "grass" and computerchoice == 2:
         print("You lose!")
@@ -434,6 +446,7 @@ while running:
     ⠀⠀⢧⣿⣷⡤⠒⠓⠁⠀⠀⠀⠀⠀⠀⠀⠉⠉⠋⠁⠀⠀⠀⠀
     ⠀⠀⠈⣚⡻⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ''')
+        score += 1
 
     elif playerchoice == "grass" and computerchoice == 5:
         print("It's a tie!")
@@ -441,4 +454,4 @@ while running:
     if not input("play again? (y/n): ").lower()== "y":
         running = False
 
-print("Hi", str(name) + " thanks for playing!")
+print("Hi", str(name) + " thanks for playing! you won " + str(score) + " times")
