@@ -2,15 +2,15 @@
 import random
 
 
-#Welcome message, game rules and player name
+# Welcome message, game rules and player name
 print("Welcome to game world")
 
-player = input("Do you want to play Rock, Paper, Scissors game? yes/no ")
+player = input("Do you want to play Rock, Paper, Scissors game? y/n ")
 
-if player.lower() != "yes":
+if player.lower() != "y":
     quit("Thanks for stoping by")
 else:
-    print("Here is the rules for the game ")  
+    print("Here is the rules for the game ")
     print(" . The game is between you and the computer")
     print()
     print(" . There are 5 options to chose from (Fire, Wave, Fish, Boat, Grass)")
@@ -28,9 +28,9 @@ if player.lower() != "ok":
     quit("Okay, thanks for stopping by")
 else:
     print("Game starts :)")
-print()   
+print()
 # Let player enter name
-name = input("Enter your name ").capitalize()
+name = input("Enter your name: ").capitalize()
 # The strip() method ensures that something has to be entered and
 # the isalpha() method ensures that only letters can be entered
 while not name.strip() or not name.isalpha():
@@ -41,7 +41,7 @@ while not name.strip() or not name.isalpha():
 print()
 "Name: "
 print("Hi,", str(name) + "!")
-#End player name
+# End player name
 
 # Player score
 score = 0
@@ -54,13 +54,13 @@ running = True
 
 while running:
     playerchoice = None
-    computerchoice = random.choice(options) #Computer choses randomly
+    computerchoice = random.choice(options)  # Computer choses randomly
 
-    while playerchoice not in options: # Keep runing until player chose from optionlist
+    while playerchoice not in options:  # Keep runing until player chose from optionlist
         playerchoice = input("Make a choice (Fire, Wave, Fish, Boat, Grass) ").lower()
 
     if playerchoice == "fire":
-        print('''You chose '''+playerchoice+'''!''') #Print player choice
+        print('''You chose '''+playerchoice+'''!''')  # Print player choice
         print('''
     ⠀⠀⠀⠀⠀⠀⠈⣿⣷⡀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣧⠀⠀⠀
@@ -76,7 +76,7 @@ while running:
         ''')
 
     elif playerchoice == "wave":
-        print('''You chose '''+playerchoice+'''!''') #Print player choice
+        print('''You chose '''+playerchoice+'''!''')  # Print player choice
         print('''⢠⠦⠴⠂⠒⠲⠙⠒⠶⠤⢄⡀⢀⠀⠀⠀⠀⠀⠀
     ⠀⠀⢠⡞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢤⣀⠀⠀⠀
     ⠀⠀⠈⣧⠀⠀⠀⠀⣀⢄⣶⣿⣿⣷⣦⡄⠀⠀⠀⠈⡄⠀⠀
@@ -93,7 +93,7 @@ while running:
         ''')
 
     elif playerchoice == "fish":
-        print('''You chose '''+playerchoice+'''!''') #Print player choice
+        print('''You chose '''+playerchoice+'''!''')  # Print player choice
         print('''
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣿⣿⣿⣿⣿⣷⣀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⢾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣦⡀⠀⠀⠀⠀
@@ -108,7 +108,7 @@ while running:
         ''')
 
     elif playerchoice == "boat":
-        print('''You chose '''+playerchoice+'''!''') #Print player choice
+        print('''You chose '''+playerchoice+'''!''')  # Print player choice
         print('''
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡧⣬⢿⡇⠀⣿⠬⠿⠇⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⢡⠃⠀⢇⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -123,7 +123,7 @@ while running:
         ''')
 
     if playerchoice == "grass":
-        print('''You chose '''+playerchoice+'''!''') #Print player choice
+        print('''You chose '''+playerchoice+'''!''')  # Print player choice
         print('''
     ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
     ⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -138,10 +138,9 @@ while running:
     ⠀⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠀⠀
         ''')
 
-
-    computerchoice = random.randint(1,5) # List computer choice in number 1-5
+    computerchoice = random.randint(1, 5)  # List computer choice in number 1-5
     if computerchoice == 1:
-        print('''The computer chose fire!''') #print computer choice
+        print('''The computer chose fire!''')  # print computer choice
         print('''
     ⠀⠀⠀⠀⠀⠀⠈⣿⣷⡀⠀⠀⠀⠀
     ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣷⣧⠀⠀⠀
@@ -267,12 +266,12 @@ while running:
     ''')
         score += 1
 
-    #Wave
+    # Wave
     elif playerchoice == "wave" and computerchoice == 1:
-        print("It's a tie!")
+        print("You lose!")
 
     elif playerchoice == "wave" and computerchoice == 2:
-        print("You lose!")
+        print("It's a tie!")
 
     elif playerchoice == "wave" and computerchoice == 3:
         print("Yeah! you win")
@@ -315,9 +314,9 @@ while running:
     elif playerchoice == "wave" and computerchoice == 5:
         print("You lose!")
 
-    #Fish
+    # Fish
     elif playerchoice == "fish" and computerchoice == 1:
-        print("It's a tie!")
+        print("You lose!")
 
     elif playerchoice == "fish" and computerchoice == 2:
         print("Yeah! you win")
@@ -339,7 +338,7 @@ while running:
         score += 1
 
     elif playerchoice == "fish" and computerchoice == 3:
-        print("You lose!")
+        print("It's a tie!")
 
     elif playerchoice == "fish" and computerchoice == 4:
         print("Yeah! you win")
@@ -363,9 +362,9 @@ while running:
     elif playerchoice == "fish" and computerchoice == 5:
         print("You lose")
 
-    #Boat
+    # Boat
     elif playerchoice == "boat" and computerchoice == 1:
-        print("It's a tie!")
+        print("You lose!")
 
     elif playerchoice == "boat" and computerchoice == 2:
         print("Yeah! you win")
@@ -406,12 +405,12 @@ while running:
         score += 1
 
     elif playerchoice == "boat" and computerchoice == 4:
-        print("You lose!")
+        print("It's a tie!")
 
     elif playerchoice == "boat" and computerchoice == 5:
         print("You lose!")
 
-    #Grass
+    # Grass
     elif playerchoice == "grass" and computerchoice == 1:
         print("Yeah! you win")
         print('''
@@ -459,7 +458,7 @@ while running:
     elif playerchoice == "grass" and computerchoice == 5:
         print("It's a tie!")
 
-    if not input("play again? (y/n): ").lower()== "y":
+    if not input("play again? (y/n): ").lower() == "y":
         running = False
 
-print("Hi", str(name) + " thanks for playing! you won " + str(score) + " times")
+print("Thank you", str(name) + " for playing! you won " + str(score) + " times")
