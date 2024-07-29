@@ -5,11 +5,12 @@ Portfolio Project 3 – User Ngozi89 – Code Institute
 
 ### Introduction to the project
 
-The program created is an online game. It is called Rock-Paper-Scissors Pokemon. Compared to the classic rock-paper-scissors game.The game is based on chance and luck. You can find more information about the general idea of the game on Wikipedia.
+The program created is an online game. It is called Rock-Paper-Scissors Extended. Compared to the classic rock-paper-scissors game, this version has the additional items Lizard and Spock to add more variety to the game. This variant is known from the TV series "The Big Band Theory". The game is based on chance and luck. You can find more information about the general idea of the game on Wikipedia.
+<br>Compared to the classic rock-paper-scissors game.
 <br>
 [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors) Leads to the Wikipedia page of rock paper scissors.<br>
 Here is the link to my Depolyed project:<br>
-[Rock-Paper-Scissors Pokemon](#) Leads to my deployed project.
+[Rock-Paper-Scissors Pokemon](https://py-games-rps-45a939b6cc4b.herokuapp.com/) Leads to my deployed project.
 
 ### Contents
 
@@ -43,14 +44,20 @@ Here is the link to my Depolyed project:<br>
 
 ### Gameplay
 
-First, the player is asked if he or she wants to play giving option to play or quit. If play choses "y" the game rules will display but if the player input is not "y", the game ends. If player input is y and the game rules is displayed, the player is asked to type ok if he or want to go ahead to play the game after reading the rules. If the player input is not "ok", the game end but if the player input is "ok" indicating interest in playing the game, the player is asked to enter his or her name. This allows the computer to address the player directly. When the game has started, the player chooses from the options of (Fire, Wave, Fish, Boat, or Grass). At the same time, the computer also selects its object using a random function.
+First, the player is asked if he or she wants to play giving option to play or quit. If play choses "y" the game rules will be displayed but if the player input is not "y", the game ends. If player input is y and the game rules is displayed, the player is asked to type ok if he want to go ahead to play the game after reading the rules. If the player input is not "ok", the game end but if the player input is "ok" indicating interest in playing the game, the player is asked to enter his name. This allows the computer to address the player directly. When the game has started, the player chooses from the options of (Rock, Paper, Scissors, Lizard, or Spock). At the same time, the computer also selects its object using a random function.
+
 Here are the criteria according to which the computer chooses:<br>
-If player choice is fire and computer choice is 1 which is fire, then it's a tie
-Fire burns grass <br>
-Wave quench fire <br>
-Fire roast fish<br>
-Boat caught fish <br>
-Grass cover boat <br>
+If player choice is rock and computer choice is 1 which is fire, then it's a tie
+Scissors cuts Paper <br>
+Paper covers Rock <br>
+Rock crushes Lizard <br>
+Lizard poisons Spock <br>
+Spock smashes Scissors <br>
+Scissors decapitates Lizard <br>
+Lizard eats Paper <br>
+Paper disproves Spock <br>
+Spock vaporises Rock <br>
+Rock crushes Scissors <br>
 
 The player can play as often as he likes. And It is possible to quit the game after each round.
 
@@ -116,12 +123,12 @@ Only letters are allowed when entering names. If something else is entered or th
 
 ![Start screen error message](images/error-start-screen.png "Error message when entering a username that is not valid.")
 
-If a valid name has been entered, the player will be addressed personally by name. Then ask to make a choice from the option list. The user can only chose what is in the options list (Fire, Wave, Fisf, Boat, Grass) If player chose andything that's not in the list, the while-loop will continue running until the player chooses from the option provided.
+If a valid name has been entered, the player will be addressed personally by name. Then ask to make a choice from the option list. The user can only chose what is in the options list (Rock, Paper, Scissors, Lizard, Spock) If player chose andything that's not in the list, the while-loop will continue running until the player chooses from the option provided.
 
 ![]("")
 
-Once the player has made a valid selection, his choice is compared with that of the computer and the winner is announced. The computer's choice and the player's choice are displayed.  If the player has won, this is displayed, if the play loses it will be dsplayed and if it's a tie the player will see.
-He is also asked at the end whether he wants to play another round, in which case he should to enter y, to play again or n to stop. If the player enter y, then the game contiunes but if n the game end and the player can see his score. 
+Once the player has made a valid selection, his choice is compared with that of the computer and the winner is announced. The computer's choice and the player's choice are displayed.  If the player has won, this is displayed, if the player loses it will be dsplayed and if it's a tie the player will see.
+He is also asked at the end whether he wants to play another round, in which case he chose to enter y, to play again or n to stop. If the player enter y, then the game contiunes but if n the game end and the player can see his score. 
 
 This is a screen when the player wins:<br>
 
@@ -240,5 +247,6 @@ The content of this project was written by Ngozi Omenka. I used wikipedia for ge
 ### Acknowledgments
 - Slack pear groupe.
 - To all people who make their knowledge available for free in the internet, especially on youtube.
+- [Bro code](https://www.youtube.com/watch?v=fn68QNcatfo)
 
 **This project is for educational use only and was created for the Code Institute course Full stack software development by Ngozi Omenka.**
