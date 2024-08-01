@@ -1,5 +1,6 @@
 # ReadME
 Portfolio Project 3 – User Ngozi89 – Code Institute
+![](images/amiresponsivepy.png)
 
 ## Project overview
 
@@ -9,8 +10,9 @@ The program created is an online game. It is called Rock-Paper-Scissors Extended
 <br>Compared to the classic rock-paper-scissors game.
 <br>
 [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors) Leads to the Wikipedia page of rock paper scissors.<br>
-Here is the link to my Depolyed project:<br>
-[Rock-Paper-Scissors Pokemon](https://py-games-rps-45a939b6cc4b.herokuapp.com/) Leads to my deployed project.
+Here is the link to my Depolyed project
+
+[Delpoyed link](https://py-games-rps-45a939b6cc4b.herokuapp.com/) Leads to my deployed project.
 
 ### Contents
 
@@ -102,47 +104,44 @@ Start Screen:
  
 On the start screen, the player is greeted. You will then be asked if you want to play the game.
 
-![Start screen](images/start-screen.png "Start screen of the program")
+![Start screen](images/startgame.png "Start screen of the program")
 
 Only letters are allowed. If something else is entered or the field is left blank, the game ends and a thank you message appears. This is done so user can chose to contiune or stop
 
-![Start screen error message](images/error-start-screen.png ".")
+![Start screen error message](images/startgame.png ".")
 
 If a valid input has been entered, the player will see the rules of the game. The program is briefly explained and a menu appears. Here the player can choose to continue or quit. To contiune the game the player input must be "ok" else the game cuts and a thank you message appears.
 
-![Game rlue](images/name-entered.png ".")
-
-![Play screen](images/play-screen.png "Play screen.")
+![Game rlue](images/game-rules.png ".")
 
 
 On the start screen, the player is greeted with the ASCII font Rock Paper Scissors Extended. You will then be asked to enter your name.
 
-![User name]()
+![User name](images/player-name1.png)
 
 Only letters are allowed when entering names. If something else is entered or the field is left blank, a message appears: The text field must not be left blank and only letters are permitted!
 
-![Start screen error message](images/error-start-screen.png "Error message when entering a username that is not valid.")
+![Start screen error message](images/wrong-name-input.png "Error message when entering a username that is not valid.")
 
 If a valid name has been entered, the player will be addressed personally by name. Then ask to make a choice from the option list. The user can only chose what is in the options list (Rock, Paper, Scissors, Lizard, Spock) If player chose andything that's not in the list, the while-loop will continue running until the player chooses from the option provided.
-
-![]("")
+![](images/wrong-option-input.png)
 
 Once the player has made a valid selection, his choice is compared with that of the computer and the winner is announced. The computer's choice and the player's choice are displayed.  If the player has won, this is displayed, if the player loses it will be dsplayed and if it's a tie the player will see.
 He is also asked at the end whether he wants to play another round, in which case he chose to enter y, to play again or n to stop. If the player enter y, then the game contiunes but if n the game end and the player can see his score. 
 
 This is a screen when the player wins:<br>
 
-![Win screen](images/you-win.png "Win screen")
+![Win screen](images/win-game.png "Win screen")
 
 This is a screen when the player loses:<br>
 
-![Loose screen](images/you-loose.png "Loose screen")
+![Loose screen](images/lose-game.png "Loose screen")
 
 This is a screen of a draw:<br>
 
-![Draw screen](images/draw-screen.png "Draw screen")
+![Draw screen](images/tie.png "Draw screen")
 
-![Quit screen](images/quit-screen.png "Quit screen")
+![Quit screen/Result](images/result.png "Quit screen/Result")
 
 Future Implementations:
 - Player result displays why still playing. Example. 
@@ -217,20 +216,17 @@ This are the common errors that occurred: <br>
 - no newline at end of file (fixed) <br>
 
 All bugs could be fixed:
-![CI Python Linter test result](images/ci-python-linter-test.png "CI Python Linter test result")
+![CI Python Linter test result](images/2024-08-01.png "CI Python Linter test result")
 
 ### Solved bugs
-- I tried to check several conditions at the same time with a while loop. So: "while not playerchoice == "fire" or not "wave" or not" . This was the wrong approach. The playerchoice function was modified with a try and expect block. Later in the process I implemented a validation check using a more simple while loop again. Blanks were not taken into account
-
-- In addition, I had formatted an f string incorrectly so that the variables were not displayed correctly in the terminal at first. Improving the formatting could fix this.
+- I tried to check several conditions at the same time with a while loop. So: "while not playerchoice == "rock" or not "wave" or not" . This was the wrong approach. The playerchoice function was modified with a try and expect block. Later in the process I implemented a validation check using a more simple while loop again. Blanks were not taken into account
 
 ### Content for the project
-The content of this project was written by Ngozi Omenka. I used wikipedia for general information about the game. The emoji for the game is from [emojicombos](https://emojicombos.com/).
+The content of this project was written by Ngozi Omenka. I used wikipedia for general information about the game. The emoji for the game is from [emojipedia](https://emojipedia.org/scissors) and [emojicombos](https://emojicombos.com/thumb-up)
 
 ### Learning materials
 - All content from Online Course in Full Stack Software Development especially videos about Portfolio Project 3 and ReadME from Code Instituet.
 
-- [youtube](https://www.youtube.com/watch?v=I9h1c-121Uk&t=37s ) Information about the input function.
 
 - [W3Schools](https://www.w3schools.com/python/ref_string_isalpha.asp ) Information on the isalpha method.
 

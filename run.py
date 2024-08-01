@@ -1,4 +1,5 @@
 # Import the module
+import os
 import random
 
 
@@ -25,9 +26,9 @@ else:
 player = input(" . If you are ready, type 'ok' ")
 
 if player.lower() != "ok":
-    quit("Okay, thanks for stopping by")
+    quit("You have chosen to quit the game, thanks for stopping by")
 else:
-    print("Game starts :)")
+    print("Game starts ")
 print()
 # Let player enter name
 name = input("Enter your name: ").capitalize()
@@ -44,7 +45,9 @@ print("Hi,", str(name) + "!")
 # End player name
 
 # Player score
+played = 0
 score = 0
+lost = 0
 
 # Add player and computer choice
 options = ("rock", "paper", "scissors", "lizard", "spock")
@@ -61,9 +64,7 @@ while running:
 
     if playerchoice == "rock":
         print('''You chose '''+playerchoice+'''!''')  # Print player choice
-        print('''
-    ⠀⠀⠀⠀⠀⠀🗿⠀⠀⠀
-        ''')
+        print('''🗿''')
 
     elif playerchoice == "paper":
         print('''You chose '''+playerchoice+'''!''')  # Print player choice
@@ -116,25 +117,32 @@ while running:
     if playerchoice == "rock" and computerchoice == 1:
         print("It's a tie!")
         print()
+        played += 1
 
     elif playerchoice == "rock" and computerchoice == 2:
         print("You lose! Paper covers Rock")
         print()
+        lost += 1
+        played += 1
 
     elif playerchoice == "rock" and computerchoice == 3:
         print("Yeah! you win! Rock crushes Scissors")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "rock" and computerchoice == 4:
         print("Yeah! You win, Rock crushes Lizard")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "rock" and computerchoice == 5:
         print("You lose! Spock vaporizes Rock")
+        lost += 1
+        played += 1
 
     # paper
     elif playerchoice == "paper" and computerchoice == 1:
@@ -142,72 +150,93 @@ while running:
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "paper" and computerchoice == 2:
         print("It's a tie!")
         print()
+        played += 1
 
     elif playerchoice == "paper" and computerchoice == 3:
         print("You lose! Scissors cuts Paper")
+        lost += 1
+        played += 1
 
     elif playerchoice == "paper" and computerchoice == 4:
         print("You lose! Lizard eats Paper")
         print()
+        lost += 1
+        played += 1
 
     elif playerchoice == "paper" and computerchoice == 5:
         print("Yeah! You win, Paper disproves Spock")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     # scissors
     elif playerchoice == "scissors" and computerchoice == 1:
         print("You lose!  Rock crushes Scissors")
+        lost += 1
+        played += 1
 
     elif playerchoice == "scissors" and computerchoice == 2:
         print("Yeah! you win Scissors cuts Paper")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "scissors" and computerchoice == 3:
         print("It's a tie!")
         print()
+        played += 1
 
     elif playerchoice == "scissors" and computerchoice == 4:
         print("Yeah! You win, Scissors decapitates Lizard")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "scissors" and computerchoice == 5:
         print("You lose! Spock smashes Scissors")
         print()
+        lost += 1
+        played += 1
 
     # lizard
     elif playerchoice == "lizard" and computerchoice == 1:
         print("You lose! Rock crushes Lizard")
         print()
+        lost += 1
+        played += 1
 
     elif playerchoice == "lizard" and computerchoice == 2:
         print("Yeah! you win, Lizard eats Paper")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "lizard" and computerchoice == 3:
         print("You lose! Scissors decapitates Lizard")
         print()
+        lost += 1
+        played += 1
 
     elif playerchoice == "lizard" and computerchoice == 4:
         print("It's a tie!")
         print()
+        played += 1
 
     elif playerchoice == "lizard" and computerchoice == 5:
         print("Yeah! You win, Lizard poisons Spock")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     # spock
     elif playerchoice == "spock" and computerchoice == 1:
@@ -215,26 +244,51 @@ while running:
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "spock" and computerchoice == 2:
         print("You lose! Paper disproves Spock")
         print()
+        lost += 1
+        played += 1
 
     elif playerchoice == "spock" and computerchoice == 3:
         print("Yeah! You win, Spock smashes Scissors")
         print('''👍''')
         print()
         score += 1
+        played += 1
 
     elif playerchoice == "spock" and computerchoice == 4:
         print("You lose! Lizard poisons Spock")
         print()
+        lost += 1
+        played += 1
 
     elif playerchoice == "spock" and computerchoice == 5:
         print("It's a tie!")
         print()
+        played += 1
 
     if not input("play again? (y/n): ").lower() == "y":
         running = False
+    
+os.system('clear')
 
-print("Thank you", str(name) + " for playing! you won " + str(score) + " times")
+print("Thank you", str(name) + " for playing! you played " + str(played) + " times,",
+"won " + str(score) + " times & lost " + str(lost) + " game")
+print('''
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣦⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢠⣤⣤⣤⡀⠀⢀⣼⣿⣿⣿⣿⣿⣿⣧⣤⣤⣤⣤⣤⣤⣤⣤⣄⡀⠀
+⢸⣿⣿⣿⡇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄
+⢸⣿⣿⣿⡇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+⢸⣿⣿⣿⡇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀
+⢸⣿⣿⣿⡇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀
+⢸⣿⣿⣿⡇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀
+⢸⣿⣿⣿⡇⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀
+⢸⣿⣿⣿⡇⠀⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠃''')
+print()
+print("To try again click start game button")
